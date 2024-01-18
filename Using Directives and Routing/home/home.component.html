@@ -1,0 +1,25 @@
+<br><br>
+
+<img [src]="imageUrl" alt="Header Image" [width]="imageW" [height]="imageH"/>
+<p>User: {{ owner_name }}</p>
+
+<!-- Using *ngFor Directive -->
+<h3 class="p-3 text-center">Users below are welcome in this site ^_^</h3> 
+
+<div class="container"> 
+    <table class="table table-striped table-bordered" border = "1"> 
+        <thead> 
+            <tr> 
+                <th>Name</th> 
+                <th>Email</th>
+            </tr> 
+        </thead> 
+            <tbody> 
+                <tr *ngFor="let user of staff"> 
+                <td>{{user.firstName}} {{user.lastName}}</td> 
+                <td>{{user.email}}</td>
+            </tr> 
+            </tbody> 
+    </table>
+<br><br>
+</div> 
