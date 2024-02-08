@@ -1,0 +1,54 @@
+<div>
+
+  <h1>Angular Pipes</h1>
+
+  <h3>Adding the Parameters</h3>
+  Today's date is: {{presentDate}} <br/>
+  <hr>
+
+  <h3>Date Pipes</h3>
+  Today's date : {{presentDate | date }} <br/>
+  This is a short date : {{presentDate | date:'shortDate' }}<br/>
+  This line shows the full date : {{presentDate | date:'fullDate' }}<br/>
+  This will show a formatted date : {{presentDate | date:'M/dd/yyyy' }}<br/>
+  This indicates the hours and minutes : {{presentDate | date:'h:mm' }}
+  <hr>
+
+  <h3>Text Format Pipes</h3>
+  Date with uppercase : {{presentDate | date:'fullDate' | uppercase }} <br/>
+  Date with lowercase : {{presentDate | date:'medium' | lowercase }}
+  <hr>
+
+  <h3>AsyncPipe</h3>
+  Seconds changing in Time: {{ time$ | async | date:'mediumTime' }}
+  <hr>
+
+  <h3>Currency Pipes</h3>
+  {{price | currency:'':true}}<br/>
+  {{price | currency:'INR'}}<br/>
+  {{price | currency: 'KRW'}}
+  <hr>
+
+  <h3>SlicePipe</h3>
+  Start index: {{Fruits | slice: 2}} <br/>
+  Start and end index: {{Fruits | slice: 1:4}} <br/>
+  Negative index: {{Fruits | slice: -2}} <br/>
+  Negative start and end index: {{Fruits | slice: -4:-2}}
+  <hr>
+
+  <h3>Decimal Pipes</h3>
+  {{decimalNum1 | number}} <br/>
+  {{decimalNum2 | number}} <br/>
+  {{3.953687412389 | number: '1.1-5'}}
+  <hr>
+
+  <h3>JsonPipe</h3>
+  Object {{ data | json}}
+  <hr>
+
+  <h3>Percentage Pipe</h3>
+  {{854 | percent}}<br/>
+  {{1258 | percent: '1.3-5'}}<br/>
+  {{544556 | percent: '2.3'}}
+
+</div>
