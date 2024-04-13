@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    margin-inline: 0.3rem;
+}
+
+.input-area {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+.btn {
+    margin-inline: 3px;
+}
+
+.amount-txt {
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.desc-txt {
+    color: #737373;
+}
